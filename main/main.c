@@ -88,8 +88,6 @@ static void lcd_init(void)
 while (1) {
     gpio_set_level(LCD_PIN_NUM_BACKLIGHT, 1);
     vTaskDelay(pdMS_TO_TICKS(500));
-    gpio_set_level(LCD_PIN_NUM_BACKLIGHT, 0);
-    vTaskDelay(pdMS_TO_TICKS(500));
 }
 
 
