@@ -179,7 +179,7 @@ def main():
     logger.info("================================")
     
     # Configuration
-    port = 'COM3'  # Change this to your ESP32's COM port
+    port = 'COM7'  # Change this to your ESP32's COM port
     
     # Create and start display
     display = ESP32Display(port=port)
