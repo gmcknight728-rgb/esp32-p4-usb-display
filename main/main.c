@@ -11,7 +11,6 @@
 #include "esp_lcd_panel_io.h"
 #include "esp_lcd_panel_vendor.h"
 #include "esp_lcd_panel_ops.h"
-#include "driver/touch_pad.h"
 
 static const char *TAG = "ESP32P4_USB_DISPLAY";
 
