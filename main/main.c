@@ -85,6 +85,13 @@ static void lcd_init(void)
     
     ESP_LOGI(TAG, "LCD initialized successfully");
 }
+while (1) {
+    gpio_set_level(LCD_PIN_NUM_BACKLIGHT, 1);
+    vTaskDelay(pdMS_TO_TICKS(500));
+    gpio_set_level(LCD_PIN_NUM_BACKLIGHT, 0);
+    vTaskDelay(pdMS_TO_TICKS(500));
+}
+
 
 // USB serial communication task
 static void usb_serial_task(void *arg)
