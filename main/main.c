@@ -8,7 +8,6 @@
 #include "esp_log.h"
 #include "esp_err.h"
 
-#include "esp_bsp.h"          // ⭐ IMPORTANT (real display init)
 #include "driver/usb_serial_jtag.h"
 
 static const char *TAG = "P4_USB_DISPLAY";
