@@ -1,0 +1,9 @@
+dependencies:
+  idf:
+    version: ">=5.0"
+  esp_lcd:
+    git: https://github.com/espressif/esp-lcd.git
+    version: "^1.0"
+  esp_codec_dev:
+    git: https://github.com/espressif/esp-codec-dev.git
+    version: "^0.2"

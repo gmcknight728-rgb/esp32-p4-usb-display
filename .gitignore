@@ -1,0 +1,30 @@
+# Build artifacts
+build/
+dist/
+*.o
+*.a
+*.so
+
+# ESP-IDF specific
+sdkconfig
+sdkconfig.old
+sdkconfig.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+venv/
+env/
+
+# Logs
+*.log
