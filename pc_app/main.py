@@ -16,7 +16,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 class ESP32Display:
-    def __init__(self, port='COM7', baudrate=115200):
+    def __init__(self, port='COM8', baudrate=115200):
         self.port = port
         self.baudrate = baudrate
         self.serial_conn = None
@@ -179,7 +179,7 @@ def main():
     logger.info("================================")
     
     # Configuration
-    port = 'COM7'  # Change this to your ESP32's COM port
+    port = 'COM8'  # Change this to your ESP32's COM port
     
     # Create and start display
     display = ESP32Display(port=port)
