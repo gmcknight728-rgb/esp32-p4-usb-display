@@ -72,12 +72,9 @@ void app_main(void)
 {
     ESP_LOGI(TAG, "Booting ESP32-P4 USB Display");
 
-    // ---------------- DISPLAY INIT (THIS FIXES YOUR BLACK SCREEN) ----------------
-    ESP_ERROR_CHECK(bsp_display_start());
+    // ---------------- DISPLAY INIT (THIS FIXES YOUR BLACK SCREEN) ---------------
 
     // Turn on backlight (THIS IS WHAT YOU WERE MISSING)
-    ESP_ERROR_CHECK(bsp_display_backlight_on());
-
     ESP_LOGI(TAG, "Display initialized via BSP");
 
     // ---------------- QUEUE ----------------
